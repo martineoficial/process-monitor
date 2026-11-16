@@ -1,0 +1,17 @@
+{
+  "name": "process-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "a simple process monitor",
+  "main": "index.js",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
